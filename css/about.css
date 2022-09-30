@@ -1,0 +1,315 @@
+body {
+  overflow-x: hidden;
+}
+.main.header {
+  z-index: 1;
+}
+.header {
+  z-index: 2;
+}
+.header{overflow-x: hidden !important;}
+.pic2 {
+  clip-path: polygon(
+    50% 0%,
+    80% 10%,
+    100% 35%,
+    100% 70%,
+    80% 90%,
+    50% 100%,
+    20% 90%,
+    0% 70%,
+    0% 35%,
+    20% 10%
+  );
+  width: calc(200px + (320 -200) * (100vw - 320px) / (1920 -320));
+  height: calc(200px + (320 -200) * (100vw - 320px) / (1920 -320));
+  margin: 30px;
+  margin-left: 25px;
+  float: left;
+  margin-bottom: 10px;
+}
+.pic2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.h12 {
+  font-family: 'Bungee Spice', cursive;
+  margin-top: 20px;
+  color: white;
+  font-size: calc(30px + (60 -30) * (100vw - 320px) / (1920 -320));
+  text-align: center;
+  margin-bottom: 10px;
+}
+.write3 {
+  font-family: 'Oswald', sans-serif;;
+  color: white;
+  font-size: calc(20px + (30 -20) * (100vw - 320px) / (1920 -320));
+  margin-left: 20px;
+  padding-right: 20px;
+}
+.title3 {
+  font-family: 'Bungee Spice', cursive;
+  text-align: center;
+  letter-spacing: 1px;
+  color: white;
+  font-size: calc(35px + (60 -35) * (100vw - 320px) / (1920 -320));
+  font-weight: bolder;
+}
+.skillBox {
+  margin: 20px auto;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.skillBox a {
+  float: left;
+  width: 5%;
+  font-size: calc(25px + (30 -25) * (100vw - 320px) / (1920 -320));
+  padding-right: 5px;
+  margin-top: 18px;
+}
+.fa-html5{color: red;font-size: 310%;}
+.fa-css3-alt{color: #0277bd;font-size: 310%;}
+.fa-js{color: #e5a228;font-size: 300%;}
+.fa-database{color: green;font-size: 300%;}
+.fa-node-js{color: #83cd29;font-size: 300%;}
+.fa-react{color: #008ac1;font-size: 310%;}
+.skillBar {width: 75%;height: 35px;margin: calc(10px + (11 -10) * (100vw - 320px) / (1920 -320)) auto;}
+.skillArea {
+  margin-left: 10px;
+  position: relative;
+  left: 35px;
+  top: 10px;
+  padding: 5px;
+}
+.skillName {
+  text-align: center;
+  font-size: calc(15px + (22 -15) * (100vw - 320px) / (1920 -320));
+  margin: 35px;
+  position: relative;
+  top: 10px;
+  color: white;
+}
+.full-skill {
+  background-color: red;
+  width: 95%;
+  height: 10px;
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.skill-HTML {
+  width: 85%;
+  height: 10px;
+  -webkit-animation: Animate-HTML 5s;
+  animation: Animate-HTML 5s;
+  background-color: aqua;
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.skill-CSS {
+  width: 75%;
+  height: 10px;
+  -webkit-animation: Animate-CSS 5s;
+  animation: Animate-CSS 5s;
+  background-color: aqua;
+  position: relative;
+  float: left;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.skill-JS {
+  width: 65%;
+  height: 10px;
+  -webkit-animation: Animate-JS 5s;
+  animation: Animate-JS 5s;
+  background-color: aqua;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+.skill-A4 {
+  width: 45%;
+  height: 10px;
+  -webkit-animation: Animate-A4 5s;
+  animation: Animate-A4 5s;
+  background-color: aqua;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+.skill-NODEJS {
+  width: 50%;
+  height: 10px;
+  -webkit-animation: Animate-NODEJS 5s;
+  animation: Animate-NODEJS 5s;
+  background-color: aqua;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+.skill-WP {
+  width: 30%;
+  height: 10px;
+  -webkit-animation: Animate-WP 5s;
+  animation: Animate-WP 5s;
+  background-color: aqua;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+@-webkit-keyframes Animate-HTML {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+@keyframes Animate-HTML {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+@-webkit-keyframes Animate-CSS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+@keyframes Animate-CSS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 75%;
+  }
+}
+@-webkit-keyframes Animate-JS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+@keyframes Animate-JS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 65%;
+  }
+}
+@-webkit-keyframes Animate-A4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+@keyframes Animate-A4 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 45%;
+  }
+}
+@-webkit-keyframes Animate-NODEJS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@keyframes Animate-NODEJS {
+  from {
+    width: 0;
+  }
+  to {
+    width: 50%;
+  }
+}
+@-webkit-keyframes Animate-WP {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+@keyframes Animate-WP {
+  from {
+    width: 0;
+  }
+  to {
+    width: 30%;
+  }
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 10%;
+}
+.grid-item {
+  height: calc(200px + (250 -200) * (100vw - 320px) / (1920 -320));
+  width: calc(200px + (250 -200) * (100vw - 320px) / (1920 -320));
+  position: relative;
+  margin: 10px;
+}
+.qualification3 {
+  background: -webkit-linear-gradient(70deg, red 40%, #5ac8fa 40%);
+  background: -o-linear-gradient(70deg, red 40%, #5ac8fa 40%);
+  background: -moz-linear-gradient(70deg, red 40%, #5ac8fa 40%);
+  background: linear-gradient(70deg, red 40%, #5ac8fa 40%);
+  text-align: center;
+  border-radius: 5px;
+  height: calc(200px + (250 -200) * (100vw - 320px) / (1920 -320));
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.qualification3 h1 {
+  font-size: calc(25px + (35 -25) * (100vw - 320px) / (1920 -320));
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.uni3 {
+  font-size: calc(15px + (22 -15) * (100vw - 320px) / (1920 -320));
+}
+.date3 {
+  font-size: calc(12px + (19 -12) * (100vw - 320px) / (1920 -320));
+}
+@media (max-width: 600px) {
+  .control-pic3 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 35%;
+    align-items: center;
+  }
+}
