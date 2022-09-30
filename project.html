@@ -1,0 +1,28 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8" /><meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" type="image/x-icon" href="logo2.png" />
+<link rel="stylesheet" href="css/index.css" /><link rel="stylesheet" href="css/projects.css" /><link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Oswald&display=swap" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script><script src=" javascript and jason/particles.js"></script><script src=" javascript and jason/app.js"></script><script src="https://kit.fontawesome.com/3613b4bdca.js" crossorigin="anonymous"></script>
+<title>Projects</title></head><body><div id="particles-js"></div><div class="header"></div><div class="main"><br><br><h1 class="h12">OUR LATEST PROJECTS</h1>
+<section><div class="container"><div class="item" id="1"><img src="pic/1.jpg" alt=""><div class="text"><h3>PROJECT 1</h4><p>COMING SOON</p></div><div class="button">Learn More</div></div>
+<div class="item" id="2"><img src="pic/2.jpg" alt=""><div class="text"><h3>PROJECT 2</h4><p>COMING SOON</p></div><div class="button">Learn More</div></div>
+<div class="item" id="3"><img src="pic/3.jpg" alt=""><div class="text"><h3>PROJECT 3</h4><p>COMING SOON</p></div><div class="button">Learn More</div></div>
+<div class="item" id="4"><img src="pic/4.jpg" alt=""><div class="text"><h3>PROJECT 4</h4><p>COMING SOON</p></div><div class="button">Learn More</div></div>
+<div class="item" id="5"><img src="pic/5.jpg" alt=""><div class="text"><h3>PROJECT 5</h4><p>COMING SOON</p></div><div class="button">Learn More</div></div>
+<div class="item" id="6"><img src="pic/6.jpg" alt=""><div class="text"><h3>PROJECT 6</h4><p>COMING SOON</p></div><div class="button">Learn More</div></div></div>
+<div id="preview" class="modal"><div class="modal-content"><span class="close">&times;</span><img id="img" src=""><div id="details"><h3 id="title"></h3><p id="info">Some text</p><div class="button" id="live">View</div><i class="fab fa-github-square" id="github"></i></div></div></div></section><div class="fotter"></div></div>
+<script>$(document).ready(function () {$(".header").load("navbar.html");});$(document).ready(function () {$(".fotter").load("fotter.html");});particlesJS.load("particles-js"," javascript and jason/particles.json",function () { });
+var modalInfo = {1: {title: "Project 1",info: "COMING SOON",link: "#",github: "#"},
+2: {title: "Project 2",info: "COMING SOON",link: "#",github: "#"},
+3: {title: "Project 3",info: "COMING SOON",link: "#",github: "#"},
+4: {title: "Project 4",info: "COMING SOON",link: "#",github: "#"},
+5: {title: "Project 5",info: "COMING SOON",link: "#",github: "#"},
+6: {title: "Project 6",info: "COMING SOON",link: "#",github: "#"}};
+var modal = document.getElementById('preview');var btn = document.getElementsByClassName("button");var span = document.getElementsByClassName("close")[0];
+for (let i = 0; i < btn.length; i++) {btn[i].addEventListener("click", function () {var project = btn[i].parentElement;openModal(project);})};
+function openModal(project) {var id = project.id;var img = project.getElementsByTagName("img")[0].src;fillOut(id, img);modal.style.display = "block";document.getElementsByClassName("modal-content")[0].classList.add("scale");}
+function fillOut(id, img) {document.getElementById("title").innerHTML = modalInfo[id].title;document.getElementById("info").innerHTML = modalInfo[id].info;document.getElementById("img").src = img;document.getElementById("live").onclick = function () {window.open(modalInfo[id].link, '_blank');} 
+document.getElementById("github").onclick = function () {window.open(modalInfo[id].github, '_blank');}}
+span.onclick = function () {modal.style.display = "none";}
+window.onclick = function (event) {if (event.target == modal) {modal.style.display = "none";}} 
+</script></body></html>
